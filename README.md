@@ -1,5 +1,5 @@
 # QRCodeScanner
-QR Scanning library based on zxing for android devices API 15 and up
+QR Scanning library based on zxing for android devices API 26 and up
 
 ![In action](https://github.com/zenas91/QRCodeScanner/blob/master/showOff.gif)
 
