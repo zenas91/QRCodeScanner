@@ -1,7 +1,7 @@
 # QRCodeScanner
 QR Scanning library based on zxing for android devices API 15 and up
 
-![In action](https://github.com/blikoon/QRCodeScanner/blob/master/showOff.gif)
+![In action](https://github.com/zenas91/QRCodeScanner/blob/master/showOff.gif)
 
 # Features
  * Scan QR Code
@@ -22,10 +22,10 @@ QR Scanning library based on zxing for android devices API 15 and up
 * In your app module gradle file just add the dependency
 ```java
    dependencies {
-    compile 'com.github.blikoon:QRCodeScanner:0.1.2'
+    implementation 'com.github.zenas91:QRCodeScanner:0.1.4'
    }
 ```
-Be sure to check the latest version [here](https://github.com/blikoon/QRCodeScanner/releases) 
+Be sure to check the latest version [here](https://github.com/zenas91/QRCodeScanner/releases) 
 * In your activity, Declare the Request code for QR Code scan
 ```java
 private static final int REQUEST_CODE_QR_SCAN = 101;
@@ -48,7 +48,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
             if(data==null)
                 return;
             //Getting the passed result
-            String result = data.getStringExtra("com.blikoon.qrcodescanner.error_decoding_image");
+            String result = data.getStringExtra("error_decoding_image");
             if( result!=null)
             {
                 AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
@@ -70,7 +70,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
             if(data==null)
                 return;
             //Getting the passed result
-            String result = data.getStringExtra("com.blikoon.qrcodescanner.got_qr_scan_relult");
+            String result = data.getStringExtra("qr_scan_result");
             Log.d(LOGTAG,"Have scan result in your app activity :"+ result);
             AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
             alertDialog.setTitle("Scan result");
@@ -89,7 +89,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 * You're good to go!
 
 # Example app
-https://github.com/blikoon/QRCodeScanner/tree/master/app
+https://github.com/zenas91/QRCodeScanner/tree/master/app
 
 # Video Tutorial
 https://www.youtube.com/watch?v=R9JxDpKpkAk
