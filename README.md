@@ -22,10 +22,10 @@ QR Scanning library based on zxing for android devices API 26 and up
 * In your app module gradle file just add the dependency
 ```java
    dependencies {
-    implementation 'com.github.zenas91:QRCodeScanner:0.1.4'
+    implementation 'com.github.blikoon:QRCodeScanner:0.1.2'
    }
 ```
-Be sure to check the latest version [here](https://github.com/zenas91/QRCodeScanner/releases) 
+Be sure to check the latest version [here](https://github.com/blikoon/QRCodeScanner/releases) 
 * In your activity, Declare the Request code for QR Code scan
 ```java
 private static final int REQUEST_CODE_QR_SCAN = 101;
